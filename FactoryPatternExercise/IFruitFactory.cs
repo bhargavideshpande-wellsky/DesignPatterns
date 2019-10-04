@@ -6,6 +6,6 @@ namespace FactoryPatternExercise
 {
     public interface IFruitFactory
     {
-        IFruits GetFruits();
+        IFruits GetFruits(string fruitName);
     }
 }

@@ -6,8 +6,8 @@ namespace FactoryPatternExercise
     {
         static void Main(string[] args)
         {
-            IFruitFactory fruitFactory = new MangoFactory();
-            var fruit = fruitFactory.GetFruits();
+            IFruitFactory fruitFactory = new FruitFactory();
+            var fruit = fruitFactory.GetFruits("Mango");
             fruit.SelectedFruit();
             Console.ReadKey();
         }
