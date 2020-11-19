@@ -4,9 +4,8 @@ using System.Text;
 
 namespace FactoryPatternExercise
 {
-    public class Person
+    public interface IFruits
     {
-        public string Name { get; set; }
-        public int Id { get; set; }
+        void SelectedFruit();
     }
 }

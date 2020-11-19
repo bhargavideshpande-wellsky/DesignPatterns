@@ -6,8 +6,10 @@ namespace FactoryPatternExercise
     {
         static void Main(string[] args)
         {
-            IPersonFactory personFactory = new PersonFactory();
-            personFactory.CreatePerson("Bhargavi");
+            IFruitFactory fruitFactory = new FruitFactory();
+            var fruit = fruitFactory.GetFruits("Mango");
+            fruit.SelectedFruit();
+            Console.ReadKey();
         }
     }
 }
